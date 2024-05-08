@@ -1,2 +1,2 @@
-# Leo.github.io 202405
+# Quant Info.
 
