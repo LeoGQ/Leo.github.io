@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>量化投资 量化交易 入门 量化策略 量化系统 平台 程序化</title>
     <style>
-        /* 简单的CSS样式，用于居中显示菜单 */
         body, html {
             height: 100%;
             margin: 0;
@@ -31,20 +30,29 @@
         .menu li:hover {
             background-color: #23527c;
         }
+        .author-info {
+            margin-top: 20px;
+            text-align: center;
+            color: #ccc;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column; /* 这里设置为列方向 */
+        }
     </style>
 </head>
 <body>
-
-<ul class="menu">
-    <li onclick="location.href='QuantABC.html'">零基础指引</li>
-    <li onclick="location.href='page2.html'">页面2</li>
-    <li onclick="location.href='page3.html'">页面3</li>
-</ul>
-    
-<div style="margin-top: 20px;">
-    <p>author：Leo</p>
-    <p>contact：weixin:470770753</p>
-</div>
-    
+    <div class="container">
+        <ul class="menu">
+            <li onclick="location.href='QuantABC.html'">零基础指引</li>
+            <li onclick="location.href='page2.html'">页面2</li>
+            <li onclick="location.href='page3.html'">页面3</li>
+        </ul>
+            
+        <div class="author-info">
+            <p>Author: Leo &nbsp;&nbsp; WeiXin: 470770753</p>
+        </div>
+    </div>
 </body>
 </html>
