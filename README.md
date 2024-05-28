@@ -1,1 +1,1 @@
-QuantInfo
+[QuantInfo]
