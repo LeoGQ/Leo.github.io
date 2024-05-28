@@ -1,2 +1,2 @@
-QuantInfo
-[Home](https://leogq.github.io/quant)
+QuantInfo 
+[More>>](https://leogq.github.io/quant)
