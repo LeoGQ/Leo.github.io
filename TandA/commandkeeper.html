@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>交易账户实现多人下单 分仓系统 交易外接 多指令管理</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>交易账户实现多人下单 分仓系统 交易外接 多指令管理</h1>
+    <p><strong>指令管家下载：<a href="https://raw.githubusercontent.com/LeoGQ/quant/main/CommandKeeper/%E6%8C%87%E4%BB%A4%E7%AE%A1%E5%AE%B6.zip">点击下载</a></strong></p>
+    <p><strong>或项目地址：<a href="https://github.com/LeoGQ/quant/tree/main/CommandKeeper/">访问项目</a></strong></p>
+    <p>实现多个交易员或基金经理同时委托，并将委托指令发送到同一台电脑，再由这台电脑生成指令文件（指令保存为messages.csv），最后通过券商或期货商的交易软件文件交互功能实现下单。</p>
+    <!-- 插入图片-->
+    <img src="指令管家.png" alt="指令管家">
+    <p>说明：</p>
+    <ol>
+        <li>将指令管家服务端在具有固定IP的电脑上运行，用来收集不同交易员和基金经理的指令，并同步给交易软件的文件交互实现下单。</li>
+        <li>指令管家服务端的设置：IP地址，设置为本机的内部监控地址如：0.0.0.0或者localhost，端口自定义即可。（如有防火墙限制需放开相关防火墙限制）</li>
+        <li>指令管家客户端，用于不同的交易员或基金经理下单，IP地址为服务端的公网IP地址，端口必须与服务端的一致。</li>
+        <li>生成的指令文件需要根据对应交易软件的文件交互要求做调整。</li>
+    </ol>
+</body>
+</html>
