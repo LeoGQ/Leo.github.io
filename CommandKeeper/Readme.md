@@ -1,7 +1,7 @@
 **交易账户实现多人下单 分仓系统 交易外接 多指令管理**
-
-**指令管家**
-<br />实现多个交易员或基金经理同时委托，并将委托指令发送到同一台电脑，再由这台电脑生成指令文件（指令保存为messages.csv），最后通过券商或期货商的交易软件文件交互功能实现下单。
+<br /><br />**指令管家下载：https://raw.githubusercontent.com/LeoGQ/quant/main/CommandKeeper/%E6%8C%87%E4%BB%A4%E7%AE%A1%E5%AE%B6.zip**
+<br />**或项目地址：https://github.com/LeoGQ/quant/tree/main/CommandKeeper/指令管家.zip**
+<br /><br />实现多个交易员或基金经理同时委托，并将委托指令发送到同一台电脑，再由这台电脑生成指令文件（指令保存为messages.csv），最后通过券商或期货商的交易软件文件交互功能实现下单。
 ![image](https://github.com/LeoGQ/quant/assets/46437678/c1382f28-6350-4a58-94ec-c795b38ed94d)
 
 <br />说明：<br />
