@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <style>
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        img {
+            width: 800px; /* Adjust the size as needed */
+            height: auto;
+        }
+    </style>
+    <script>
+        function refreshGIFs() {
+            var gifElements = document.querySelectorAll('.image-container img');
+            for (var i = 0; i < gifElements.length; i++) {
+                var img = gifElements[i];
+                img.src = img.src.split('?')[0] + '?' + new Date().getTime();
+            }
+        }
+        setInterval(refreshGIFs, 60000);
+    </script>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://image.sinajs.cn/newchart/min/sh000001.gif" alt="GIF 1">
+        <img src="http://image.sinajs.cn/newchart/daily/sh000001.gif" alt="GIF 2">
+        
+        <img src="https://image.sinajs.cn/newchart/futures/min/AU0.gif" alt="GIF 3">
+        <img src="http://image.sinajs.cn/newchart/futures/daily/AU0.gif" alt="GIF 4">
+        
+        <img src="https://image.sinajs.cn/newchart/futures/min/AG0.gif" alt="GIF 5">
+        <img src="http://image.sinajs.cn/newchart/futures/daily/AG0.gif" alt="GIF 6">
+        
+        <img src="https://image.sinajs.cn/newchart/usstock/min/ixic.gif" alt="GIF 7">
+        <img src="http://image.sinajs.cn/newchart/usstock/daily/ixic.gif" alt="GIF 8">
+        
+        <img src="https://image.sinajs.cn/newchart/futures/global/min/XAU.gif" alt="GIF 9">
+        
+        <img src="https://image.sinajs.cn/newchart/futures/global/min/XAG.gif" alt="GIF 10">
+    </div>
+</body>
+</html>
